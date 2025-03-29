@@ -1,3 +1,2 @@
-const a = 5;
-const b = 11;
-console.log(a+b);
+import _ from "lodash";
+console.log(_.last(['one', 'two']));

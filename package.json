@@ -7,14 +7,17 @@
     "url": "https://github.com/yokithaiu/hexlet-js/issues"
   },
   "repository": {
-    "type": "module",
+    "type": "git",
     "url": "git+https://github.com/yokithaiu/hexlet-js.git"
   },
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
