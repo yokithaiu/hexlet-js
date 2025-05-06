@@ -1,14 +1,9 @@
 import set from '../src/set.js'
-
+import { strict as assert } from 'node:assert';
 const obj = {};
 
-set(obj, 'key1', 'value1') 
-if (obj.key1 !== 'value1') {
-    throw new Error('Function works wrong!')
-}
+const firstTest = set(obj, 'key1', 'value1'); 
+assert.deepEqual(firstTest, 'value1');
 
-set(obj, 'key1', 'next value')
-if (obj.key1 !== 'next value') {
-    throw new Error('Function works wrong!');
-}
-console.log('All tests finished correct!');
+const secondTest = set(obj, 'key1', 'next value')
+assert.deepEqual(secondTest, 'next value');
