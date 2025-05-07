@@ -1,4 +1,6 @@
-import _ from "lodash";
-export default function last(arr) { 
-    return _.last(arr);
+export default function reverse(str) {
+    const result = str.split('')
+    .reverse()
+    .join('');
+    return result;
 };
